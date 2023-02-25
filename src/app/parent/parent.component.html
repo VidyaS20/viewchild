@@ -1,0 +1,23 @@
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header">
+        Parent Component
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Parent name : {{parentname}}</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <button class="btn btn-primary btn-sm" (click)="onSubmit()">Send Data To Child</button> &nbsp;
+        <button class="btn btn-success btn-sm" (click)="onChildMethod()">Call Child Method</button> &nbsp;
+        <button class="btn btn-danger btn-sm" (click)="onChildColor('red')">Make Child Comp Red</button> &nbsp;
+        <button class="btn btn-primary btn-sm mt-1" (click)="onChildColor('blue')">Make Child Comp Blue</button> &nbsp;
+        <button class="btn btn-warning btn-sm mt-1" (click)="onChildColor('yellow')">Make Child Comp Yellow</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <app-child></app-child>
+  </div>
+</div>
+
